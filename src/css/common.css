@@ -1,18 +1,79 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #fffefe;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
+  background-color: #0d2c40;
+  color: #fffefe;
   line-height: 1.5;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+.search-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+button {
+  width: 100px;
+  padding: 12px;
+  display: block;
+  background-color: #173540;
+  border-radius: 5px;
+  color: #fffefe;
+}
+button:hover,
+button:focus {
+  color:#173540;
+  background-color: #f2c894;
+}
+#datetime-picker {
+  width: 300px;
+  height: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: transparent;
+  color: #217373;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  text-transform: uppercase;
+}
+.field {
+  text-align: center;
+  width: 100px;
+  padding: 15px;
+  background-color: #f2c894;
+  border: 1px solid #3c3d59;
+  border-radius: 5px;
+}
+
+.field > .value {
+  font-size: 30px;
+  font-weight: 700;
+  color: #173540;
+}
+.field > .label {
+  color: #3d3d3d;
 }
